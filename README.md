@@ -4,14 +4,16 @@ In admin mode, launch powershell command:
 # 1. System File Checker tool to repair missing or corrupted system files
   `SFC /SCANNOW`
 
-#2. If there are problems with the system image, use DISM with the RestoreHealth option to automatically scan and repair common issues.
+# 2. If there are problems with the system image, use DISM with the RestoreHealth option to automatically scan and repair common issues.
   `DISM.exe /Online /Cleanup-Image /Restorehealth`
 
-#3 delete windows update cache files
+# 3. delete windows update cache files
 
   `$path = "C:\Windows\SoftwareDistribution"
   Get-ChildItem -Path $path -Recurse | Remove-Item -Force -Recurse`
 
-#4 Checks the file system and file system metadata of a volume for logical and physical errors.
+# 4.Checks the file system and file system metadata of a volume for logical and physical errors.
 
   `chkdsk /F /R /X /B /scan /offlinescanandfix`
+  
+ # if Nothing worked from the above , manually download the upgrade assistant from https://www.microsoft.com/en-us/software-download/windows10
