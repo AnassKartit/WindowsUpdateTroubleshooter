@@ -1,4 +1,4 @@
-# WindowsUpdateTroubleshooter
+# Fix for : We couldn’t complete the updates. Undoing changes Winodws 10 Update 
 A collection of commands to help in solving We couldn’t complete the updates. Undoing changes. Don’t turn off your computer.
 In admin mode, launch powershell command:
 # 1. System File Checker tool to repair missing or corrupted system files
