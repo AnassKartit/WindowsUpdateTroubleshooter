@@ -27,8 +27,8 @@ SFC /SCANNOW
 
 # 4.Checks the file system and file system metadata of a volume for logical and physical errors.
 
-    ```powershell
-       chkdsk /F /R /X /B /scan /offlinescanandfix
-    ```
+ ```powershell
+ chkdsk /F /R /X /B /scan /offlinescanandfix
+ ```
   
  # if Nothing worked from the above , manually download the upgrade assistant from https://www.microsoft.com/en-us/software-download/windows10
