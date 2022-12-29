@@ -20,8 +20,10 @@ In admin mode, launch powershell command:
 
 # 3. delete windows update cache files
 
-    ```powershell
+     ```powershell
      $path = "C:\Windows\SoftwareDistribution"
+     ```
+     ```powershell
      Get-ChildItem -Path $path -Recurse | Remove-Item -Force -Recurse
      ```
 
