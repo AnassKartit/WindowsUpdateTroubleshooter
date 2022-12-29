@@ -24,8 +24,8 @@ In admin mode, launch powershell command:
      $path = "C:\Windows\SoftwareDistribution"
      Get-ChildItem -Path $path -Recurse | Remove-Item -Force -Recurse
      ```
-  
-  # 4.Checks the file system and file system metadata of a volume for logical and physical errors.
+
+# 4.Checks the file system and file system metadata of a volume for logical and physical errors.
 
     ```powershell
        chkdsk /F /R /X /B /scan /offlinescanandfix
