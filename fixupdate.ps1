@@ -21,7 +21,7 @@ $Host.UI.RawUI.WindowTitle = "Windows Update Repair Tool"
 Clear-Host
 
 Write-Host "-------------------------------------------------------" -ForegroundColor Yellow
-Write-Host "               SYSTEM REPAIR TOOL" -ForegroundColor Yellow
+Write-Host "               WINDOWS 10 UPDATE REPAIR TOOL" -ForegroundColor Yellow
 Write-Host "-------------------------------------------------------" -ForegroundColor Yellow
 Write-Host
 
