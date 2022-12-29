@@ -1,4 +1,22 @@
-$Host.UI.RawUI.WindowTitle = "System Repair Tool"
+
+# DISCLAIMER:
+# This script is provided as is, with no warranty or guarantee of any kind.
+# Use it at your own risk. It is always a good idea to back up your system
+# before making any changes.
+
+Write-Host "DISCLAIMER:" -ForegroundColor Yellow
+Write-Host "This script is provided as is, with no warranty or guarantee of any kind." -ForegroundColor Yellow
+Write-Host "Use it at your own risk. It is always a good idea to back up your system" -ForegroundColor Yellow
+Write-Host "before making any changes." -ForegroundColor Yellow
+
+$confirm = Read-Host "Do you understand and accept the disclaimer? (y/n)"
+
+if ($confirm -ne "y") {
+    Write-Host "Exiting..."
+    exit
+}
+
+$Host.UI.RawUI.WindowTitle = "Windows Update Repair Tool"
 
 Clear-Host
 
