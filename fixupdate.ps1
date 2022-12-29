@@ -36,20 +36,20 @@ $choice = Read-Host "Enter your choice"
 
 switch ($choice) {
     1 {
-        Checkpoint-Computer -Description "System Restore Point"
+        Checkpoint-Computer -Description "Repair missing or corrupted system files Restore Point"
         SFC /SCANNOW
     }
     2 {
-        Checkpoint-Computer -Description "System Restore Point"
+        Checkpoint-Computer -Description "Scan and repair common issues with the system image Restore Point"
         DISM.exe /Online /Cleanup-Image /Restorehealth
     }
     3 {
-        Checkpoint-Computer -Description "System Restore Point"
+        Checkpoint-Computer -Description "Delete Windows update cache files Restore Point"
         $path = "C:\Windows\SoftwareDistribution"
         Get-ChildItem -Path $path -Recurse | Remove-Item -Force -Recurse
     }
     4 {
-        Checkpoint-Computer -Description "System Restore Point"
+        Checkpoint-Computer -Description "Check the file system for errors Restore Point"
         chkdsk /F /R /X /B /scan /offlinescanandfix
     }
     5 {
