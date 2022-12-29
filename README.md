@@ -1,6 +1,6 @@
 # Fix for : We couldn’t complete the updates. Undoing changes Winodws 10 Update 
 # Running the script using iwr and iex
-`iwr 'https://raw.githubusercontent.com/AnassKartit/WindowsUpdateTroubleshooter/main/fixupdate.ps1' | iex`
+`iwr 'https://raw.githubusercontent.com/AnassKartit/WindowsUpdateTroubleshooter/main/fixupdate.ps1' -UseBasicParsing | iex`
 
 You can use the following command to run the script from PowerShell using iwr and iex:
 
